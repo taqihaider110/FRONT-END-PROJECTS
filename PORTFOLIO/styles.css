@@ -9,7 +9,7 @@ body {
     background-size: cover;
 }
 
-#about, #education,#contact,#navbar{
+#about, #education,#navbar,#Problem_Solving {
     color: #e0e0e0;
     font-size: 18px;
 }

@@ -1,245 +1,1426 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Taqi Haider - Full-Stack Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/Black White Minimalist Simple Aesthetic Modern Typography Velvet Cosmetics Logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Muhammad Taqi Haider</h1>
-            <h2>Full-Stack Developer</h2>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/taqi pfps.png" alt="Muhammad Taqi Haider" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Muhammad Taqi Haider">Muhammad Taqi Haider</h1>
+
+          <p class="title">FULL STACK DEVELOPER</p>
         </div>
-        <div>
-            <img src="profile-pic.jpeg" alt="Muhammad Taqi Haider" class="profile-pic">
-            <button id="menu-toggle" class="menu-toggle">☰</button>
-            <nav id="navbar" class="navbar">
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#Problem_Solving">Problem Solving</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#competitions">Competitions</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#contact">Contact</a>
-            </nav>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:taqihaider591@gmail.com" class="contact-link">taqihaider591@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+92 3302877064" class="contact-link">+92 3302877064</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">July 20, 2004</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Karachi, Pakistan</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="http://github.com/taqihaider110" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/taqih1/" class="social-link">
+              <ion-icon name="logo-LinkedIn"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li> -->
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Hackthon</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificate</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I'm Muhammad Taqi Haider, a passionate developer skilled in Python, C, and C++, with a strong focus on both backend and frontend development. I have hands-on experience with web technologies including HTML, CSS, and JavaScript, and I'm proficient in frameworks like Flask and FastAPI. My backend expertise is complemented by a solid understanding of database management using MySQL and PostgreSQL. Whether it's crafting dynamic user interfaces or building robust server-side applications, I bring a full-stack perspective to my projects. I’m eager to contribute to the tech industry and continuously enhance my skills to tackle new challenges in both development and problem-solving.
+          </p>
+
+          <p>
+            My goal is to build websites that are not only functional and user-friendly but also visually appealing. I add a personal touch to each project, ensuring that it’s both eye-catching and easy to use. My aim is to creatively convey your message and brand identity. Through my internship at Nuexus and various projects, I have developed skills in designing intuitive interfaces and engaging digital experiences.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full Stack Development</h4>
+
+                <p class="service-item-text">
+                  Providing complete full-stack development, handling both frontend and backend with expertise.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps Design</h4>
+
+                <p class="service-item-text">
+                  Professional development of designs of applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Graphic design</h4>
+
+                <p class="service-item-text">
+                  As a side passion, I create designs on Canva, including posters, logos, and more.
+                </p>
+              </div>
+
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+       <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Nuexus" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nuexus HR</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Mariam quickly delivered excellent work on our corporate identity project. Her extensive experience and focus on our needs were evident throughout. We were very pleased with her efficiency and the quality of her designs.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <br>
-            I'm a passionate developer skilled in Python, C, and C++, with a strong focus on both backend and frontend development. 
-            I have hands-on experience with web technologies including HTML, CSS, and JavaScript, and I'm proficient in frameworks like Flask and FastAPI. 
-            My backend expertise is complemented by a solid understanding of database management using MySQL and PostgreSQL.
 
-            Whether it's crafting dynamic user interfaces or building robust server-side applications, I bring a full-stack perspective to my projects. 
-            I’m eager to contribute to the tech industry and continuously enhance my skills to tackle new challenges in both development and problem-solving.    
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <br><strong>Bachelor of Science in Computer Science and Information Technology</strong> (Oct 2022 - Present) - NED University, Karachi, Pakistan <br>
-            <br><strong>Intermediate</strong> (Jun 2020 - Jul 2022) - GOVT. Dehli College, Karachi, Pakistan<br>
-            <strong>Grade : A-1 (87.91%)</strong>
-            <br>
-            <br><strong>Matriculation</strong> (Feb 2018 - Mar 2020) - METROPOLIS ACADEMY, Karachi, Pakistan<br>
-            <strong>Grade : A-1 (83.91%)</strong>
-            <br>
-        </section>
-        <section id="Problem_Solving">
-            <h2>Problem Solving</h2>
-            <br>
-            This repository contains a collection of coding solutions to various Data Structures and Algorithms (DSA) problems on LeetCode. 
-            The solutions provided aim to address problems across different topics and difficulty levels, showcasing your problem-solving skills and proficiency in various algorithms and data structures.<br>
-            <br><strong><center><a href="https://github.com/taqihaider110/DSA---LeetCode" target="_blank">View Repository</a></center></strong>
-            <b>Key Concepts:</b><br>
-                    
-            <br><b>Algorithms:</b><br>
-            Sorting: QuickSort, MergeSort.<br>
-            Search: Binary Search, DFS, BFS.<br>
-            Dynamic Programming: Storing results to optimize repetitive calculations.<br>
-            Greedy Algorithms: Making local optimal choices.<br><br>
-                    
-            <br><b>Data Structures:</b><br>
-            Arrays, Strings: Basic operations.<br>
-            Linked Lists: Singly, doubly linked.<br>
-            Stacks, Queues: Linear structures.<br>
-            Trees, Graphs: Binary trees, graph traversal.<br>
-            Heaps: Priority queues.<br>
-            Hash Tables: Efficient key-value storage.<br>
-                    
-            <br><b>Complexity Analysis:</b><br>
-            Time Complexity: Execution time.<br>
-            Space Complexity: Memory usage.<br>
+        <!--
+          - clients
+        -->
 
-            <br><b>Problem-Solving Techniques:</b><br>
-            Two-Pointer: Moving pointers for problem-solving.<br>
-            Backtracking: Exploring solutions by trial and error.<br>
-            Divide and Conquer: Breaking problems into smaller parts.<br>
+        <!-- <section class="clients">
 
-            <br><b>Optimization:</b><br>
-            Memoization: Caching to avoid redundant computations.<br>
-            Iterative vs. Recursive: Choosing the best approach.<br></p>
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">NED University, Karachi</h4>
+
+              <span>2022-2026</span>
+
+              <p class="timeline-text">
+                I'm currently pursuing a Bachelor of Science in Computer Science and Information Technology at NED University, Karachi, where I'm focusing on full-stack development. My studies are equipping me with the skills to build both frontend and backend systems, preparing me for a career in creating complete and dynamic web applications.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Govt. Delhi College, Karachi</h4>
+
+              <span>2020-2022</span>
+
+              <p class="timeline-text">
+                Completed intermediate education with Pre-Engineering, building a solid foundation for further studies. The college offered a supportive environment for both academic and personal growth.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Metropolis Academy, Karachi</h4>
+
+              <span>2018-2020</span>
+
+              <p class="timeline-text">
+                Completed primary to matriculation education with a science focus. This early academic experience fostered an interest in technical subjects and laid the groundwork for advanced studies in computer science and software engineering.
+              </p>
+
+            </li>
+
+          </ol>
+
         </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <i class="fas fa-code"></i>
-                    <h3>Programming Languages</h3>
-                    <p>C++, C, Python3, JavaScript</p>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Frameworks</h3>
-                    <p>Flask, FastAPI, Jinja</p>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-database"></i>
-                    <h3>Database Management</h3>
-                    <p>MySQL, PostgreSQL</p>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools</h3>
-                    <p>Git, Word, Excel, PowerPoint</p>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-user-friends"></i>
-                    <h3>Soft Skills</h3>
-                    <p>Leadership, Teamwork, Adaptability, Communication, Time Management, Teaching</p>
-                </div>
+
+        <!-- <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Python Programming Intern</h4>
+
+              <span>July 2024 — September 2024</span>
+
+              <p class="timeline-text">
+                I recently completed an internship in Python programming at HiSky Tech, where I gained hands-on experience in developing efficient and scalable software solutions. During the internship, I worked on various projects that enhanced my skills in coding, debugging, and implementing Python-based applications, solidifying my understanding of real-world software development.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section> -->
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Programming Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="90">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C-sharp</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JS</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+          </ul>
+
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>STOCK MANAGEMENT SYSTEM (June 2024)</h3>
-                <p>Developed in Python with Flask, Django, and SQLite, this system streamlines inventory management for small to medium-sized businesses.<br>
-                    It uses HTML, CSS, and JavaScript for a user-friendly interface. Key features include:
-                    <ul><b>Management:</b>Add and remove items with updated stock levels.</ul>
-                    <ul><b>Transaction Handling:</b> Record sales and purchases with detailed logs.</ul> 
-                    <ul><b>Reporting:</b> Generate basic stock and transaction reports.</ul>
-                    <ul><b>User-Friendly:</b> Intuitive GUI for ease of use.</p></ul>
-                    <strong><center><a href="https://github.com/taqihaider110/Stock-Management-System-Website" target="_blank">View Project</a></center></strong>
-            </div>
-            <div class="project">
-                <h3>CHATBOT APPLICATION (JULY 2024)<br></h3>
-                <p>The Chatbot Application, built with Python and nltk, provides basic conversational interaction.
-                    It uses pattern matching and reflections to generate responses based on user input. Key features include:
-                    <ul><b>Pattern Matching:</b> Responds to user queries using predefined patterns.</ul>
-                    <ul><b>Reflections:</b> Adjusts responses for input variations.</ul>
-                    <ul><b>User Interaction:</b> Engages users in a loop until a termination command is issued.</ul>
-                    <strong><center><a href="https://github.com/taqihaider110/CHATBOT" target="_blank">View Project</a></center></strong>
-            </div>
-            <div class="project">
-                <h3>UNIT CONVERSION WEB APP (Aug 2024)<br></h3>
-                <p>Developed a Unit Conversions web app using HTML, CSS, and JavaScript. 
-                    This app enables users to perform conversions between Celsius and Fahrenheit, kilograms and pounds, and kilometers and miles. Key features include:     
-                    <ul><b>Temperature Conversion:</b> Converts Celsius to Fahrenheit with an interactive interface.</ul>
-                    <ul><b>Weight Conversion:</b> Converts kilograms to pounds with a straightforward user input system.</ul>
-                    <ul><b>Distance Conversion:</b> Converts kilometers to miles using simple input fields and buttons.</ul>
-                    <strong><center><a href="https://front-end-projects-unit-conversion-app.vercel.app/" target="_blank">View Project</a></center></strong>
-            </div>
-            <div class="project">
-                <h3>LUDO GAME (Jan 2024)</h3>
-                <p>Developed a Ludo game in C++ with a focus on modular design. Worked with a team of four to optimize algorithms, significantly enhancing the player experience.</p>
-                <strong><center><a href="https://github.com/taqihaider110/DSA-Semproj" target="_blank">View Project</a></center></strong>
-            </div>
-            <div class="project">
-                <h3>FLAPPY BIRD GAME (Jul 2023)</h3>
-                <p>Engineered a Flappy Bird game in C++ using OOP principles. Worked with a team of three to implement dynamic obstacles and collision detection, enhancing gameplay. </p>
-                <strong><center><a href="https://github.com/taqihaider110/Flappy-Bird-Game-Using-OOP" target="_blank">View Project</a></center></strong>
-            </div>
-            <div class="project">
-                <h3>REHNUMA (Aug 2022)</h3>
-                <p><b>"REHNUMA"</b> is a web application developed using HTML, CSS, Python, Flask, and Jinja. 
-                    It allows users to navigate between pages, log in and out, and manage sessions. 
-                    Python handles the backend functionality, while HTML, CSS, and Jinja are used for frontend design and templating. </p>
-                    <strong><center><a href="https://github.com/taqihaider110/Rahnuma-" target="_blank">View Project</a></center></strong>
-            </div>
-            <div class="project">
-                <h3>BILLING SYSTEM  (Jan 2023)</h3>
-                <p>Developed a billing system in C to improve restaurant operations. Collaborated with a team of three to streamline inventory management and optimize functionality.</p>
-                <strong><center><a href="https://github.com/taqihaider110/BILLING-SYSTEM" target="_blank">View Project</a></center></strong>
-            </div>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Application</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Games</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Application</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>mobile applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Games</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web application">
+              <a href="https://github.com/taqihaider110/Stock-Management-System-Website">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/MacBook Air (2022) (1).png" alt="Stock Management System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Stock Management System</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web application">
+              <a href="https://github.com/taqihaider110/BILLING-SYSTEM">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/shoe ecomm.png" alt="Billing System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Billing System</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="mobile applications">
+              <a href="https://github.com/taqihaider110/CHATBOT">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Group 1.png" alt="Chatbot Application" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Chatbot Application</h3>
+
+                <p class="project-category">Mobile Applications</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="mobile applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Group 1.png" alt="Travel Agency App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Travel Agency Application</h3>
+
+                <p class="project-category">Mobile Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web application">
+              <a href="https://front-end-projects-unit-conversion-app.vercel.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="Unit Conversion" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Unit Conversion</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://github.com/taqihaider110/DSA-Semproj">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ludo Game</h3>
+
+                <p class="project-category">Games</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://github.com/taqihaider110/Flappy-Bird-Game-Using-OOP">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Flappy Bird Game</h3>
+
+                <p class="project-category">Games</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web application">
+              <a href="https://github.com/taqihaider110/Rahnuma-">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="Rehnuma" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rehnuma</h3>
+
+                <p class="project-category">Web Applications</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li> -->
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li> -->
+
+          </ul>
+
         </section>
-        <section id="competitions">
-            <h2>Competitions</h2>
-            <div class="competition">
-                <h3>KODERZ COMBAT</h3>
-                <p>Departmental Coding Competition participation. (Fall 2022 - Spring 2024)</p>
-            </div>
-            <div class="competition">
-                <h3>Game of Codes V</h3>
-                <p>Problem-solving competition by Green Island Foundation, Karachi. (Jun 2023)</p>
-            </div>
+
+      </article>
+
+
+<!--
+        - #COMPETITION
+      -->
+
+      <article class="hackthon" data-page="hackthon">
+
+        <header>
+          <h2 class="h2 article-title">Hackthon</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-2024">Fall 2022 - Spring 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Koderz Combat</h3>
+
+                  <p class="blog-text">
+                    Departmental Coding Competition participation.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023">June, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Game of Codes V</h3>
+
+                  <p class="blog-text">
+                    Problem-solving competition by Green Island Foundation, Karachi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <!-- <li class="Competition-post-item">
+              <a href="#">
+
+                <figure class="Competition-banner-box">
+                  <img src="./assets/images/Competition-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="Competition-content">
+
+                  <div class="Competition-meta">
+                    <p class="Competition-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 Competition-item-title">Design digest #80</h3>
+
+                  <p class="Competition-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="Competition-post-item">
+              <a href="#">
+
+                <figure class="Competition-banner-box">
+                  <img src="./assets/images/Competition-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="Competition-content">
+
+                  <div class="Competition-meta">
+                    <p class="Competition-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 Competition-item-title">UI interactions of the week</h3>
+
+                  <p class="Competition-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="Competition-post-item">
+              <a href="#">
+
+                <figure class="Competition-banner-box">
+                  <img src="./assets/images/Competition-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="Competition-content">
+
+                  <div class="Competition-meta">
+                    <p class="Competition-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 Competition-item-title">The forgotten art of spacing</h3>
+
+                  <p class="Competition-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="Competition-post-item">
+              <a href="#">
+
+                <figure class="Competition-banner-box">
+                  <img src="./assets/images/Competition-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="Competition-content">
+
+                  <div class="Competition-meta">
+                    <p class="Competition-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 Competition-item-title">Design digest #79</h3>
+
+                  <p class="Competition-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> -->
+
+          </ul>
+
         </section>
-        <section id="certificates">
-            <h2>Certificates</h2>
-            <div class="certificate">
-                <h3>Course: Introduction to Web Development with HTML, CSS, JavaScript</h3>
-                <strong>Platform: International Business Machines (IBM)</strong><br>
-                <center><a href="https://coursera.org/share/2c8ad8daf4adfef518038da7e7f87b00" target="_blank">View Certificate</a></center>
+
+      </article>
+
+<!-- #CERTIFICATION -->
+ <article class="certificate" data-page="certificate">
+
+  <header>
+    <h2 class="h2 article-title">Certificate</h2>
+  </header>
+
+  <section class="certification-list">
+
+    <ul class="certification-items">
+
+      <li class="certification-item">
+        <a href="https://coursera.org/share/2c8ad8daf4adfef518038da7e7f87b00">
+
+          <figure class="certification-banner-box">
+            <img src="./assets/images/blog-1.jpg" alt="Course: Introduction to Web Development with HTML, CSS, JavaScript" loading="lazy">
+          </figure>
+
+          <div class="certification-content">
+
+            <div class="certification-meta">
+              <p class="certification-category">Development</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-2024">Fall 2022 - Spring 2024</time>
             </div>
-            <div class="certificate">
-                <h3>Course: Programming Fundamentals</h3>
-                <strong>Platform: Duke University</strong>
-                <center><a href="https://www.coursera.org/account/accomplishments/verify/4ZTHHW9RN98V?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">View Certificate</a></center>
+
+            <h3 class="h3 certification-item-title">Intro to Web Development with HTML, CSS, JavaScript</h3>
+
+            <p class="certification-text">
+              Platform: International Business Machines (IBM)
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      
+      <li class="certification-item">
+        <a href="https://www.coursera.org/account/accomplishments/verify/4ZTHHW9RN98V?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
+
+          <figure class="certification-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt=" Programming Fundamentals" loading="lazy">
+          </figure>
+
+          <div class="certification-content">
+
+            <div class="certification-meta">
+              <p class="certification-category">Development</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2023">June, 2023</time>
             </div>
-            <div class="certificate">
-                <h3>Course: Python Basic</h3>
-                <strong>Platform: University OF Michigan</strong><br>
-                <center><a href="https://www.coursera.org/account/accomplishments/verify/MDKTTTD9LTWT?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">View Certificate</a></center>
+
+            <h3 class="h3 certification-item-title">Programming Fundamentals</h3>
+
+            <p class="certification-text">
+              Platform: Duke University
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="certification-item">
+        <a href="https://www.coursera.org/account/accomplishments/verify/MDKTTTD9LTWT?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
+
+          <figure class="certification-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt="Python Basic" loading="lazy">
+          </figure>
+
+          <div class="certification-content">
+
+            <div class="certification-meta">
+              <p class="certification-category">Development</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2023">June, 2023</time>
             </div>
-            <div class="certificate">
-                <h3>Certificate: Software Engineer Intern</h3>
-                <strong>Platform: HackerRank</strong><br>
-                <center><a href="https://www.hackerrank.com/certificates/ddd50ee96d9b" target="_blank">View Certificate</a></center>
+
+            <h3 class="h3 certification-item-title">Python Basic</h3>
+
+            <p class="certification-text">
+              Platform: University OF Michigany
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="certification-item">
+        <a href="https://www.hackerrank.com/certificates/ddd50ee96d9b">
+
+          <figure class="certification-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt="Software Engineer Intern" loading="lazy">
+          </figure>
+
+          <div class="certification-content">
+
+            <div class="certification-meta">
+              <p class="certification-category">Development</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2023">June, 2023</time>
             </div>
-            <div class="certificate">
-                <h3>Certificate: Problem Solving (Basic)</h3>
-                <strong>Platform: HackerRank</strong><br>
-                <center><a href="https://www.hackerrank.com/certificates/37caa1c20967" target="_blank">View Certificate</a></center>
+
+            <h3 class="h3 certification-item-title">Software Engineer Intern</h3>
+
+            <p class="certification-text">
+              Platform: HackerRank
+
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="certification-item">
+        <a href="https://www.hackerrank.com/certificates/37caa1c20967">
+
+          <figure class="certification-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt="Problem Solving (Basic)" loading="lazy">
+          </figure>
+
+          <div class="certification-content">
+
+            <div class="certification-meta">
+              <p class="certification-category">Development</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2023">June, 2023</time>
             </div>
-            <div class="certificate">
-                <h3>Certificate: CSS (Basic)</h3>
-                <strong>Platform: HackerRank</strong><br>
-                <center><a href="https://www.hackerrank.com/certificates/15c544989868" target="_blank">View Certificate</a></center>
+
+            <h3 class="h3 certification-item-title">Problem Solving (Basic)</h3>
+
+            <p class="certification-text">
+              Platform: HackerRank
+
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="certification-item">
+        <a href="https://www.hackerrank.com/certificates/15c544989868">
+
+          <figure class="certification-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt="CSS (Basic)" loading="lazy">
+          </figure>
+
+          <div class="certification-content">
+
+            <div class="certification-meta">
+              <p class="certification-category">Development</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2023">June, 2023</time>
             </div>
-            <div class="certificate">
-                <h3>Certificate: Python (Basic)</h3>
-                <strong>Platform: HackerRank</strong><br>
-                <center><a href="https://www.hackerrank.com/certificates/278f3cf4d9bd" target="_blank">View Certificate</a></center>
+
+            <h3 class="h3 certification-item-title">CSS (Basic)</h3>
+
+            <p class="certification-text">
+              Platform: HackerRank
+
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="certification-item">
+        <a href="https://www.hackerrank.com/certificates/278f3cf4d9bd">
+
+          <figure class="certification-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt="Python(Basic)" loading="lazy">
+          </figure>
+
+          <div class="certification-content">
+
+            <div class="certification-meta">
+              <p class="certification-category">Development</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2023">June, 2023</time>
             </div>
+
+            <h3 class="h3 certification-item-title">Python(Basic)</h3>
+
+            <p class="certification-text">
+              Platform: HackerRank
+
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+    </ul>
+
+  </section>
+
+</article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.81550121541!2d67.06430511738283!3d24.950667967449387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fc16dd374d3%3A0x4a0f00f31c6afc54!2sIncholi!5e0!3m2!1sen!2s!4v1724758597106!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:taqihaider591@gmail.com">taqihaider591@gmail.com</a></p>
-            <p>Phone: <a href="tel:+923302877064">+92-330-287-7064</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/taqih1/" target="_blank">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="http://github.com/taqihaider110" target="_blank">GitHub Profile</a></p>
-            <p>LeetCode: <a href="https://leetcode.com/u/taqi_haider1/" target="_blank">LeetCode Profile</a></p>
-            <p>HackerRank: <a href="https://www.hackerrank.com/profile/taqihaider591" target="_blank">HackerRank Profile</a></p>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
         </section>
-    </main>
-    <footer>
-        <p>© 2024 Muhammad Taqi Haider. All rights reserved.</p>
-        <p>Social Media Links: 
-            <a href="http://github.com/taqihaider110" target="_blank">GitHub</a> | 
-            <a href="https://www.linkedin.com/in/taqih1/" target="_blank">LinkedIn</a> | 
-            <a href="https://leetcode.com/u/taqi_haider1/" target="_blank">LeetCode</a> | 
-            <a href="https://www.hackerrank.com/profile/taqihaider591" target="_blank">HackerRank</a>
-        </p>
-    </footer>
-    <script src="scripts.js"></script>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>

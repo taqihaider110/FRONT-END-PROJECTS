@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Practice</title>
+  <style>
+    body { background-color: #f4f4f4; font-family: Arial; }
+    h1 { text-align: center; color: darkblue; }
+    form { background: white; padding: 20px; margin: auto; width: 300px; border-radius: 10px; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; padding: 5px; margin-top: 5px; }
+    button { margin-top: 15px; padding: 10px; width: 100%; background: darkblue; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Student Registration</h1>
+  <form>
+    <label for="fname">Full Name:</label>
+    <input type="text" id="fname" name="fullname">
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+
+    <label for="course">Course:</label>
+    <select id="course" name="course">
+      <option value="web">Web Development</option>
+      <option value="ai">AI</option>
+    </select>
+
+    <label for="about">About You:</label>
+    <textarea id="about" name="about" rows="4"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
